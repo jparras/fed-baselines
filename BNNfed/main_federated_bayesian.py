@@ -46,8 +46,8 @@ if __name__=='__main__':
               },
               "hp": {  # Hyperparameters: note that by adding more elements to lists, it trains on a grid of hyperparameters!!
                   "epochs_per_round": [20],  # Epcohs per round
-                  "natural_lr": [1e8, 2e8, 5e8, 1e9, 2e9],  # Used to modify the learning rate of the optimizer
-                  "kl_weight": [0, 1e-5, 1e-4, 1e-3, 1e-2],  # KL weight used (see paper)
+                  "natural_lr": [1e8],  # Used to modify the learning rate of the optimizer
+                  "kl_weight": [1e-5],  # KL weight used (see paper)
                   "batch_size": [20],  # Batch size used for updates
                   "hierarchical": [False],  # Whether to use a hierarchical approach or not
                   "clients_per_round": [10],  # Number of clients updated per round
@@ -55,7 +55,7 @@ if __name__=='__main__':
                   "optimizer": ["sgd"],  # optimizer chosen (sgd = stochastic gradient descent)
                   "scale_init": [[-4.85, 0.45]],  # Mean and variance of initial values scale (i.e., var or the params)
                   "loc_init": [[0, 0.5]],  # Mean and variance of initial values loc (i.e., mean or the params)
-                  "server_learning_rate": [0.2, 0.4, 0.6, 0.8, 1.0]  # Learning rate of the server
+                  "server_learning_rate": [0.6]  # Learning rate of the server
               },
               "config_name": "mnist_virtual",
               "result_dir": os.getcwd()
