@@ -1,3 +1,5 @@
+This code is based on https://github.com/lucori/virtual and applies VIRTUAL method to solve the MNIST classification problem.
+
 The main script to be used is named «main_federated_bayesian.py» and it contains the instructions to run VIRTUAL algorithm. We also provide a «requirements.txt» that specifies the different libraries needed for the environment on which it will be executed. To run the problem, the following steps should be followed:
 
 1. First of all, a Python 3.6+ environment is required. We strongly recommend using a virtualenv.
