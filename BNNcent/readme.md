@@ -1,3 +1,5 @@
+This code is based on https://github.com/saxena-mayur/Weight-Uncertainty-in-Neural-Networks and implements Bayes By Backpropagation algorithm for the MNIST classification problem.
+
 There are two scripts implemented to carry out the classification problem, «bnn.py» and «bnn_toolbox.py», and «requirements.txt» that specifies the different libraries needed for the environment on which it will be executed. As a general overview, the code provides a simple interface designed to learn a probability distribution on the weights of a NN and allowing to modify the dataset used through a simple user implementation. The first script, «bnn.py», loads the MNIST dataset, preprocesses the data and initializes the model and its training; the second one, «bnn_toolbox.py», has the whole network implemented, with the steps to follow while training and evaluating the results.
 
 To run the problem, the following steps should be followed:
